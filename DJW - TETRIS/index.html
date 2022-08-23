@@ -2,9 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <script type = "text/javascript" src="js/painel.js"></script>
+    <script type = "text/javascript" src="js/player.js"></script>
+    <script type = "text/javascript" src="js/pontuacao.js"></script>
+    <script type = "text/javascript" src="js/script.js"></script>
+    <script type = "text/javascript" src="js/tetramino.js"></script>
+    <link href="PressStart2P-Regular.ttf" rel="stylesheet">
 </head>
 <body>
-
+    <div class="grid">
+        <canvas id="painel" class="painel-jogo"></canvas>
+        <div class = "right-column">
+            <div>
+                <h1>TETRIS</h1>
+                <p>Pontuação:  <span id = "pontos">0</span></p>
+                <p>Linhas:  <span id= "linhas">0</span></p>
+                <p>Nivel:   <span id = "nivel">0</span></p>
+                <canvas id = "proximo" class="proximo"></canvas>
+            </div>
+            <button oneclick="play()" class="play-btn">Play</button>
+        </div>
+    </div>
 </body>
 </html>
